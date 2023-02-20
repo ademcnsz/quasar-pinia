@@ -12,13 +12,12 @@ export const useNbaPlayers = defineStore('nbaPlayers', {
   actions:{
     changeGuard(newName){
       this.PG = newName;
-
-      this.$patch({
-        PG:newName,
-        // SG:newSG
-        // SF:newSF
-        // gibi çoklu değerleri bu şekilde değiştirebiliyoruz...
-      })
+      // this.$patch({
+      //   PG:newName,
+      //   // SG:newSG
+      //   // SF:newSF
+      //   // gibi çoklu değerleri bu şekilde değiştirebiliyoruz...
+      // })
     }
   }
 
